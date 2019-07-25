@@ -1,0 +1,52 @@
+structure (AED) {
+  description (AED 전체 정보)
+  property (username) {
+    type (Username)
+    min (Optional) max (One)
+  }
+  
+  property (buildplace) {
+    type (Buildplace)
+    min (Required) max (One)
+  }
+  
+  property (buildaddress) {
+    type (Buildaddress)
+    min (Required) max (One)
+  }
+  
+  property (clerktel) {
+    type (Clerktel)
+    min (Optional) max (One)
+  }
+  
+  property (managertel) {
+    type (Managertel)
+    min (Optional) max (One)
+  }
+  
+  property (distance) {
+    type (Distance)
+    min (Required) max (One)
+  }
+  
+  property (url) {
+    type (URL)
+    min (Required) max (One)
+  }
+  
+  property (routeurl) {
+    type (RouteURL)
+    min (Required) max (One)
+  }
+  
+  property (point) {
+    type (Point)
+    min (Required) max (One)
+  }
+  
+  property (mypoint) {
+    type (geo.NamedPoint)
+    min (Required) max (One)
+  }
+}

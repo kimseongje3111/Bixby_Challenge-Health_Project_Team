@@ -1,0 +1,16 @@
+capsule-info {
+  display-name (건강사업단)
+  developer-name (김성제,임동근,조민석,주성현,이성규)
+  icon-asset (/img/capsule-icon.png)
+  description ("건강사업단은 응급 상황에 필요한 정보를 제공합니다.")
+  privacy-policy-url (https://github.com/kimseongje3111/Bixby_Challenge-Health_Project_Team)
+  search-keywords {
+    keyword (AED정보)
+    keyword (제세동기정보)
+    keyword (약국정보)
+  }
+  dispatch-name (건강사업단)
+  dispatch-aliases {
+    alias (건강 사업단)
+  }
+}

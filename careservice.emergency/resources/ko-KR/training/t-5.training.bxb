@@ -1,0 +1,10 @@
+train (t-5c0rzgu9mqtsxkrx8ksqk22hz) {
+  utterance ("[g:GetPharmacyInfo] 열려있는 (약국)[v:Pharmacyvocab:Pharmacyvocabs] 찾아줘")
+  plan (Y2BhkEtOLEotTi0qy0xO1UvNTS1KT81LrtQLyEgsyk1MrmRQxS7vnloCU+KZl5bPoIzfmLL85MQkBt6yzDK94tScNL1gIMHAzMDIwAQkGYA0CEIAE1iUAQA=)
+  last-modified (1561107306257)
+}
+train (t-5y260hwdr7c6qmwj2a9hxn1j1) {
+  utterance ("[g:GetAEDInfo] (에이 이 디)[v:AEDvocab:AEDvocabs] 위치 알려줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363700606)
+}

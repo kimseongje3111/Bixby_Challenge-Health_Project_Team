@@ -1,0 +1,75 @@
+layout-macro-def (PharmacyInfo) {
+  params {
+    param (info) {
+      type (Pharmacy)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    section {
+      title {
+        template ("약국 세부 정보")
+      }
+      content {
+        compound-card {
+          content {
+            single-line {
+              text {
+                value {
+                  template ("상세 주소")
+                }
+                style (Detail_M_Soft)
+              }
+            }
+            cell-card {
+              slot2 {
+                content {
+                  primary ("#{value(info.dutyaddr)}")
+                }
+              }
+            }
+          }
+        }
+        compound-card {
+          content {
+            single-line {
+              text {
+                value {
+                  template ("약국 연락처")
+                }
+                style (Detail_M_Soft)
+              }
+            }
+            cell-card {
+              slot2 {
+                content {
+                  primary ("#{value(info.dutytel)}")
+                }
+              }
+            }
+          }
+        }
+        compound-card {
+          content {
+            single-line {
+              text {
+                value {
+                  template ("끝나는 시간")
+                }
+                style (Detail_M_Soft)
+              }
+            }
+            cell-card {
+              slot2 {
+                content {
+                  primary ("#{value(info.endtime)}")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

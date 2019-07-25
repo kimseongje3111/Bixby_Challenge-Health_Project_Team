@@ -1,0 +1,15 @@
+train (t-kj739x9nzntufmi8yypptrbaq) {
+  utterance ([g:OpenRouteBrowser_P:continue:GetPharmacyInfo] 약국 가는 길 알려줘)
+  plan (Y2BmkEtOLEotTi0qy0xO1UvNTS1KT81LrtQLyi8tSQ0N8mHQwC7vX5CaB1bjVJRfDpSOD8BlUkBGYlFuYnIlAxMDIxAzAElGBgYYDQA=)
+  last-modified (1561101697979)
+}
+train (t-kkz1umtef9zhqt59bnrywddha) {
+  utterance ("[g:GetAEDInfo] (제세동기)[v:AEDvocab:AEDvocabs] 찾아줘")
+  plan (Y2BmkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYGJgRGIGYAkIwMIQPkA)
+  last-modified (1560768787740)
+}
+train (t-kohbvq51stonus2hdy7mao7sg) {
+  utterance ("[g:GetPharmacyInfo] 근처 (약국)[v:Pharmacyvocab:Pharmacyvocabs] 알려줘")
+  plan (Y2BhkEtOLEotTi0qy0xO1UvNTS1KT81LrtQLyEgsyk1MrmRQxS7vnloCU+KZl5bPoIzfmLL85MQkBt6yzDK94tScNL1gIMHAzMDIwAQkGYA0CEIAE1iUAQA=)
+  last-modified (1561100790342)
+}

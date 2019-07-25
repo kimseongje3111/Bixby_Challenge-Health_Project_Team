@@ -1,0 +1,5 @@
+train (t-8cafjhn12z4vm5qn1q6tksysj) {
+  utterance ([g:OpenRouteBrowser_A:continue:GetAEDInfo] 가는 길 알려줘)
+  plan (Y2BmkEtOLEotTi0qy0xO1UvNTS1KT81LrtQLyi8tSQ0N8mHQwC7vX5CaB1bjVJRfDpSOd2SQxK7S0dWFgYmBEYgZgCQjAwOMBgA=)
+  last-modified (1561094950932)
+}

@@ -1,0 +1,5 @@
+train (t-2f9sqirbcaqes1nshncxdqbtb) {
+  utterance ("[g:GetAEDInfo] 가까운 (제세동기)[v:AEDvocab:AEDvocabs] 위치 알려줘")
+  plan (Y2BmkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYGJgRGIGYAkIwMIQPkA)
+  last-modified (1561090619666)
+}

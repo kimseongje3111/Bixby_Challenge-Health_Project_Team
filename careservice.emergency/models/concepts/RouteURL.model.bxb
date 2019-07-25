@@ -1,0 +1,3 @@
+text (RouteURL) {
+  description (경로 URL : viv.navigation 지원 불가로 url 사용)
+}

@@ -1,0 +1,17 @@
+action (DialClerktel) {
+  description (설치 기관 전화 연결)
+  type (Constructor)
+  
+  collect {
+    input (aed) {
+      type (AED)
+      min (Required) max (One)
+    }
+  }
+  
+  output (Clerktel) {
+    evaluate {
+      $expr(aed.clerktel)
+    }
+  }
+}

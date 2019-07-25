@@ -1,0 +1,67 @@
+layout-macro-def (PharmacyList) {
+  params {
+    param (Pharmacy) {
+      type (Pharmacy)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    compound-card {
+      content {
+        map-card {
+          aspect-ratio (16:9)
+          title-area {
+            slot1 {
+              text {
+                value ("#{value(Pharmacy.dutyname)}")
+                style (Title_M)
+              }
+            }
+          }
+          markers {
+            marker {
+              geo (Pharmacy.point.point)
+              icon ("/img/pharmacy-marker.png")
+              width (30)
+              height (30)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+            marker {
+              geo (Pharmacy.mypoint.point)
+              icon ("/img/current_location-marker.png")
+              width (25)
+              height (25)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+          zoom (15)
+        }
+        single-line {
+          text {
+            value {
+              template ("#{value(Pharmacy.dutyaddr)}")
+            }
+            style (Detail_L_Soft)
+          }
+        }
+      }
+      chin {
+        slot1 {
+          single-line {
+            text {
+              value {
+                template ("현재 위치와의 거리 : #{value(Pharmacy.distance)} (km)")
+              }
+              style (Detail_M)
+            }
+          }
+        } 
+      }
+    }
+  }
+}

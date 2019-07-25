@@ -1,0 +1,10 @@
+train (t-mdhynmw7i144kgypv0gib9n6k) {
+  utterance ("[g:GetAEDInfo] 가까운 (에이 이 디)[v:AEDvocab:AEDvocabs] 찾아줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363749605)
+}
+train (t-mfr48fqzvj7ohbda85orzwinj) {
+  utterance ("[g:GetPharmacyInfo] 가까운 (약국)[v:Pharmacyvocab:Pharmacyvocabs] 어딨어")
+  plan (Y2BhkEtOLEotTi0qy0xO1UvNTS1KT81LrtQLyEgsyk1MrmRQxS7vnloCU+KZl5bPoIzfmLL85MQkBt6yzDK94tScNL1gIMHAzMDIwAQkGYA0CEIAE1iUAQA=)
+  last-modified (1561100797404)
+}

@@ -1,0 +1,52 @@
+result-view {
+  match : AED (this)
+
+  message {
+    if (size(this) == 1) {
+      template ("[#{value(this.username)} 님,] 선택하신 AED 정보입니다.")
+    } else {
+      template ("[#{value(this.username)} 님,] 주변 2km 이내의 AED들의 정보입니다.")
+    }
+  }
+  
+  render {
+    if (size(this) == 1) {
+      layout {
+        layout-macro (AEDMap) {
+          param (info) {
+            expression (this)
+          }
+        }
+        layout-macro (AEDInfo) {
+          param(info) {
+            expression (this)
+          }
+        }
+      }
+    } else {
+      list-of (this) {
+        where-each (item) {
+          layout-macro (AEDList) {
+            param (AED) {
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  conversation-drivers {
+    if (size(this) == 1) {
+      conversation-driver {
+        template ("가는 길 알려줘")
+      }
+      conversation-driver {
+        template ("관리자에게 전화 걸어줘")
+      }
+      conversation-driver {
+        template ("설치기관으로 전화 걸어줘")
+      }
+    }
+  }
+}

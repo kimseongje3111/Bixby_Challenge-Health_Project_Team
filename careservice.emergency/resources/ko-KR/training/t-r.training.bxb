@@ -1,0 +1,5 @@
+train (t-r96i2h88geyh0zjv8pmzw7m86) {
+  utterance ([g:DialManagertel:continue:GetAEDInfo] 관리자에게 전화 걸어줘)
+  plan (Y2BmUEhOLEotTi0qy0xO1UvNTS1KT81LrtTzTcxLTE8tKknNYVDBrsIlMzEHSZUkdlWOri4MTAyMQMwAJBkZGGA0AA==)
+  last-modified (1561096001524)
+}

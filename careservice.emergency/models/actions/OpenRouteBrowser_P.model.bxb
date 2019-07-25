@@ -1,0 +1,17 @@
+action (OpenRouteBrowser_P) {
+  description (URL을 통하여 app-lauch를 실행하는 action)
+  type (Constructor)
+  
+  collect {
+    input (pharmacy) {
+      type (Pharmacy)
+      min (Required) max (One)
+    }
+  }
+  
+  output (RouteURL) {
+    evaluate {
+      $expr(pharmacy.routeurl)
+    }
+  }
+}

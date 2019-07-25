@@ -1,0 +1,11 @@
+result-view {
+  match : Dutytel (this)
+  
+  message {
+    template ("연결해 드릴게요.")
+  }
+  
+  app-launch {
+    payload-uri ("tel:#{value(this)}")
+  }
+}

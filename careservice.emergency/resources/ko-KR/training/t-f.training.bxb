@@ -1,0 +1,5 @@
+train (t-fg05rhv0jct5icx52yioxsjzk) {
+  utterance ("[g:GetAEDInfo] 근처 (자동 심장 충격기)[v:AEDvocab:AEDvocabs] 찾아줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363129943)
+}

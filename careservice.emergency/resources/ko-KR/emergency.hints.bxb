@@ -1,0 +1,8 @@
+hints {
+  uncategorized {
+    utterance (제세동기 찾아줘)
+    utterance (주변 자동 심장 충격기 알려줘)
+    utterance (약국 찾아줘)
+    utterance (열려있는 약국 찾아줘)
+  }
+}

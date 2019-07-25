@@ -1,0 +1,9 @@
+result-view {
+  match : RouteURL (this)
+  
+  message ()
+  
+  app-launch {
+    payload-uri ("#{value(this)}")
+  }
+}

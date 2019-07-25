@@ -1,0 +1,5 @@
+train (t-ehwqex2rw12it94c1paya4ygc) {
+  utterance ("[g:GetAEDInfo] 근처 (심장 충격기)[v:AEDvocab:AEDvocabs] 위치 알려줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363248077)
+}

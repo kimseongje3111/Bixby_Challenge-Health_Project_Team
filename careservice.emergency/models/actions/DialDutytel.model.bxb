@@ -1,0 +1,17 @@
+action (DialDutytel) {
+  description (약국 전화 연결)
+  type (Constructor)
+  
+  collect {
+    input (pharmacy) {
+      type (Pharmacy)
+      min (Required) max (One)
+    }
+  }
+  
+  output (Dutytel) {
+    evaluate {
+      $expr(pharmacy.dutytel)
+    }
+  }
+}

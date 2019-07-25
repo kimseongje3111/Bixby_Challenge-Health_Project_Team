@@ -1,0 +1,17 @@
+action (OpenBrowser) {
+  description (URL을 통하여 app-lauch를 실행하는 action)
+  type (Constructor)
+  
+  collect {
+    input (url) {
+      type (URL)
+      min (Required) max (One)
+    }
+  }
+  
+  output (URL) {
+    evaluate {
+      $expr(url)
+    }
+  }
+}

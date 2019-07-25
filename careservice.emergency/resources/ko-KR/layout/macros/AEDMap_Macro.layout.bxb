@@ -1,0 +1,53 @@
+layout-macro-def (AEDMap) {
+  params {
+    param (info) {
+      type (AED)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    section {
+      content {
+        map-card {
+          aspect-ratio (16:9)
+          title-area {
+            slot1 {
+              text {
+                value ("#{value(info.buildplace)}")
+                style (Title_M)
+              }
+            }
+          }
+          markers {
+            marker {
+              geo (info.point.point)
+              icon ("/img/aed-marker.png")
+              width (30)
+              height (30)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+            marker {
+              geo (info.mypoint.point)
+              icon ("/img/current_location-marker.png")
+              width (25)
+              height (25)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+          on-click {
+            intent {
+              goal : OpenBrowser
+              value : $expr(info.url)
+            }
+          }
+          zoom (16)
+        }
+      }
+    }
+  }
+}

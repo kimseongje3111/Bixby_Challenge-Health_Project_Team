@@ -1,0 +1,67 @@
+layout-macro-def (AEDList) {
+  params {
+    param (AED) {
+      type (AED)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    compound-card {
+      content {
+        map-card {
+          aspect-ratio (16:9)
+          title-area {
+            slot1 {
+              text {
+                value ("#{value(AED.buildplace)}")
+                style (Title_M)
+              }
+            }
+          }
+          markers {
+            marker {
+              geo (AED.point.point)
+              icon ("/img/aed-marker.png")
+              width (30)
+              height (30)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+            marker {
+              geo (AED.mypoint.point)
+              icon ("/img/current_location-marker.png")
+              width (25)
+              height (25)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+          zoom (15)
+        }
+        single-line {
+          text {
+            value {
+              template ("#{value(AED.buildaddress)}")
+            }
+            style (Detail_L_Soft)
+          }
+        }
+      }
+      chin {
+        slot1 {
+          single-line {
+            text {
+              value {
+                template ("현재 위치와의 거리 : #{value(AED.distance)} (km)")
+              }
+              style (Detail_M)
+            }
+          }
+        } 
+      }
+    }
+  }
+}

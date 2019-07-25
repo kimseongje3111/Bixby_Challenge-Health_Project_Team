@@ -1,0 +1,5 @@
+train (t-41p8kudobr9nb3yfga9h2ppjr) {
+  utterance ("[g:GetAEDInfo] 근처 (에이이 디)[v:AEDvocab:AEDvocabs] 어딨어")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363795990)
+}

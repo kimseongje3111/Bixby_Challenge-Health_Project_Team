@@ -1,0 +1,4 @@
+enum (AEDvocab) {
+  description (AED 발화)
+  symbol (AEDvocabs)
+}

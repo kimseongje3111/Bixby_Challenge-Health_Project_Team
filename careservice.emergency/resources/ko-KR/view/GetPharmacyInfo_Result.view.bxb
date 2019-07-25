@@ -1,0 +1,49 @@
+result-view {
+  match : Pharmacy (this)
+
+  message {
+    if (size(this) == 1) {
+      template ("[#{value(this.username)} 님,] 선택하신 약국 정보입니다.")
+    } else {
+      template ("[#{value(this.username)} 님,] 주변 5km 이내의 열려있는 약국들의 정보입니다.")
+    }
+  }
+  
+  render {
+    if (size(this) == 1) {
+      layout {
+        layout-macro (PharmacyMap) {
+          param (info) {
+            expression (this)
+          }
+        }
+        layout-macro (PharmacyInfo) {
+          param(info) {
+            expression (this)
+          }
+        }
+      }
+    } else {
+      list-of (this) {
+        where-each (item) {
+          layout-macro (PharmacyList) {
+            param (Pharmacy) {
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  conversation-drivers {
+    if (size(this) == 1) {
+      conversation-driver {
+        template ("약국 가는 길 알려줘")
+      }
+      conversation-driver {
+        template ("약국 전화 걸어줘")
+      }
+    }
+  }
+}

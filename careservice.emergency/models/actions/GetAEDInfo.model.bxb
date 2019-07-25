@@ -1,0 +1,35 @@
+action (GetAEDInfo) {
+  description (주변 AED 정보를 가져옴) 
+  type (Search)
+  
+  collect {
+    input (self) {
+      type (self.Self)
+      min (Required) max (One)
+    }
+    input (aedvocab) {
+      type (AEDvocab)
+      min (Required) max (One)
+    }
+    computed-input (point) {
+      type (Point)
+      min (Required) max (One)
+      compute {
+        intent {
+            goal : Point
+            route : geo.CurrentLocation
+        }
+      }
+    }
+  }
+  
+  output (AED) {
+    on-empty {
+      halt {
+        dialog {
+          template ("현재 주변에 검색되는 AED가 없습니다.")
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+action (OpenRouteBrowser_A) {
+  description (URL을 통하여 app-lauch를 실행하는 action)
+  type (Constructor)
+  
+  collect {
+    input (aed) {
+      type (AED)
+      min (Required) max (One)
+    }
+  }
+  
+  output (RouteURL) {
+    evaluate {
+      $expr(aed.routeurl)
+    }
+  }
+}

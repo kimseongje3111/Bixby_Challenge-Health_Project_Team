@@ -1,0 +1,35 @@
+action (GetPharmacyInfo) {
+  description (주변 약국 정보를 가져옴) 
+  type (Search)
+  
+  collect {
+    input (self) {
+      type (self.Self)
+      min (Required) max (One)
+    }
+    input (pharmacyvocab) {
+      type (Pharmacyvocab)
+      min (Required) max (One)
+    }
+    computed-input (point) {
+      type (Point)
+      min (Required) max (One)
+      compute {
+        intent {
+            goal : Point
+            route : geo.CurrentLocation
+        }
+      }
+    }
+  }
+  
+  output (Pharmacy) {
+    on-empty {
+      halt {
+        dialog {
+          template ("현재 주변에 검색되는 약국이 없거나 열려있는 약국이 없습니다.")
+        }
+      }
+    }
+  }
+}

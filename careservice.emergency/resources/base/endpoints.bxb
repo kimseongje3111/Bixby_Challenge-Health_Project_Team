@@ -1,0 +1,12 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetAEDInfo) {
+      accepted-inputs (point,aedvocab,self)
+      local-endpoint (GetAEDInfo.js)
+    }
+    action-endpoint (GetPharmacyInfo) {
+      accepted-inputs (point,pharmacyvocab,self)
+      local-endpoint (GetPharmacyInfo.js)
+    }
+  }
+}

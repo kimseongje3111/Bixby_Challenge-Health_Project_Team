@@ -1,0 +1,5 @@
+train (t-1acw9l9ds258yc09qzaqqcrsw) {
+  utterance ("[g:GetAEDInfo] (자동 제세동기)[v:AEDvocab:AEDvocabs] 알려줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363130681)
+}

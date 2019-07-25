@@ -1,0 +1,17 @@
+action (DialManagertel) {
+  description (관리자 전화 연결)
+  type (Constructor)
+  
+  collect {
+    input (aed) {
+      type (AED)
+      min (Required) max (One)
+    }
+  }
+  
+  output (Managertel) {
+    evaluate {
+      $expr(aed.managertel)
+    }
+  }
+}

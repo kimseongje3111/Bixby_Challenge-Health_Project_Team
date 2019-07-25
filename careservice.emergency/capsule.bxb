@@ -1,0 +1,34 @@
+capsule {
+  id (careservice.emergency)
+  version (2.2.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+    //target (bixby-mobile-en-US)
+  }
+  
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+  
+  permissions{
+    user-profile-access
+    guest-access-allowed (ALWAYS)
+  }
+  
+  capsule-imports {
+    import (viv.entity){ version(3.18.11) as (entity) }
+    import (viv.core){ as (core) version-from (entity)}
+    import (viv.common) { as (common) version-from (entity) }
+    import (viv.geo) { as (geo) version-from (entity) }
+    import (viv.self) { version(3.5.41) as (self) }
+  }
+  
+  store-sections {
+    section (HealthAndFitness)
+  }
+}
+
+

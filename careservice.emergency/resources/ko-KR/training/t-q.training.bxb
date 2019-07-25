@@ -1,0 +1,10 @@
+train (t-qpj1w7964rmxh5su3kc4x189o) {
+  utterance ("[g:GetAEDInfo] (제세동기)[v:AEDvocab:AEDvocabs] 어딨어")
+  plan (Y2BmkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYGJgRGIGYAkIwMIQPkA)
+  last-modified (1560844072099)
+}
+train (t-qvur318dklbw4l5mj0gro6djz) {
+  utterance ("[g:GetAEDInfo] (심장 충격기)[v:AEDvocab:AEDvocabs] 알려줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363151023)
+}

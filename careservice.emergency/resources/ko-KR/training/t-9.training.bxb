@@ -1,0 +1,10 @@
+train (t-9g2przxzsdo72s2u02yjplz0u) {
+  utterance ([g:DialDutytel:continue:GetPharmacyInfo] 약국 전화 걸어줘)
+  plan (Y2BmkE1OLEotTi0qy0xO1UvNTS1KT81LrtRzKS2pLEnNYVDEIZ2ZmANTIoddSUBGYlFuYnIlAxMDIxAzAElGBgYYDQA=)
+  last-modified (1561096033710)
+}
+train (t-9kntdnj8jyjr2bgsbrkrcabpx) {
+  utterance ("[g:GetAEDInfo] 가까운 (심장 충격기)[v:AEDvocab:AEDvocabs] 위치 찾아줘")
+  plan (Y2BhkExOLEotTi0qy0xO1UvNTS1KT81LrtRzdHVhUMAu5Z5aApT1zEvLZ5DDqbksPzkxiYG3LLNMrzg1J00vGEgwMDMwMjABSQYgDYIQwAQWZQAA)
+  last-modified (1561363268254)
+}
